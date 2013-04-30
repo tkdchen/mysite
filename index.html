@@ -3,5 +3,8 @@ layout: default
 title: echo X
 ---
 {% for post in site.posts %}
-<div class="post-section">{{ post.content }}</div>
+<div class="post-section">
+{{ post.content }}
+<p>{{ post.tags }}</p>
+</div>
 {% endfor %}

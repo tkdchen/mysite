@@ -246,12 +246,16 @@ a {
   zoom:1;
 }
 
+/* My customization */
+
 .post-section h1 {
-    font-size: 24px;
-    font-weight: bold;
+  font-family: sans-seif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-p {
-    font-size: 14px;
+.post-section p {
+  font-family: sans;
+  font-size: 14px;
 }
 
