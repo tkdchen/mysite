@@ -3,4 +3,9 @@ layout: default
 ---
 <div class="post-section">
 {{ content }}
+<p>Tags:
+{% for tag in page.tags %}
+<a href="/tags.html#{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</p>
 </div>

@@ -5,6 +5,10 @@ title: echo X
 {% for post in site.posts %}
 <div class="post-section">
 {{ post.content }}
-<p>{{ post.tags }}</p>
+<p>Tags:
+{% for tag in post.tags %}
+<a href="/tags.html#{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</p>
 </div>
 {% endfor %}
