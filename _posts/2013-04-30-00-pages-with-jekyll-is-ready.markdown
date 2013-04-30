@@ -2,7 +2,7 @@
 layout: post
 title: 开始用jekyll在Github Pages上写东西
 category: essay
-tags: github,jekyll
+tags: github jekyll
 ---
 
 # 开始用jekyll在Github Pages上写东西

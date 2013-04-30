@@ -270,3 +270,7 @@ footer {
   font-size: 14px;
 }
 
+.tag-section li {
+    font-family: sans-serif;
+    font-size: 16px;
+}

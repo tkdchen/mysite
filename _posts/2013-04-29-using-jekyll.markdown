@@ -2,7 +2,7 @@
 layout: post
 title: Using jekyll to write articles in github
 category: essay
-tags: github,jekyll
+tags: github jekyll
 ---
 
 # Using jekyll to write articles in github

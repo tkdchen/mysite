@@ -1,0 +1,17 @@
+---
+layout: default
+title: echo X
+---
+
+{% for tag in site.tags %}
+<div class="tag-section">
+  <h2><a name="{{ tag[0] }}"></a>{{ tag[0] }}</h2>
+  <ul>
+    {% for post in tag[1] %}
+      <li>{{ post.date | date: "%Y-%m-%d" }}:
+        <a href="{{post.url}}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
