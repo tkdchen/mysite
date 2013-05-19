@@ -274,3 +274,18 @@ footer {
     font-family: sans-serif;
     font-size: 16px;
 }
+
+/* Gist */
+
+.gist .line {
+	font-size: 14px;
+	color: darkgreen;
+}
+
+.gist .line-number {
+	font-size: 14px;
+}
+
+.gist .gist-meta {
+	font-size: small !important;
+}
