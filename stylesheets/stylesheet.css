@@ -260,19 +260,16 @@ footer {
 }
 
 .post-section h1 {
-  font-family: sans-seif;
   font-size: 24px;
   font-weight: bold;
 }
 
 .post-section p {
-  font-family: sans;
   font-size: 16px;
 }
 
 .tag-section li {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Gist */
