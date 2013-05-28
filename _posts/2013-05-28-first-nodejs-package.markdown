@@ -32,10 +32,13 @@ nsignal使用的目录结构非常简单，只有两层。第一层，也就是�
 
 几点感受。
 
-- Javascript的简单性充分的体现到了软件包的分发上。一个带有充分信息的package.json是多么的重要。
-- Javascript的简单性是极具欺骗性的。一旦你上了船，不久就会发现处处被埋伏。一不小心就踩下去。随处可见的回调处理，对传统的程序的顺序执行的思维逻辑形成挑战。当然，这同时也是非常有意思的，在你逐渐熟悉了这种行事方式后。幸好，Node社区的大牛门开发了[async](https://github.com/caolan/async)这样一把神器。
-- 在Javascript中写面向对象的代码是多么的难受。很多探路者们已经为像我这样的后来者留下了丰富的、有价值的资产。Node的``utils.inherits``能够方便的实现类的继承概念。但是，千万不要用在Python、Java、c++里进行OOP经验完全搬到这里。
-- 基于事件的异步模型是现在炙手可热的编程方式，Python有[gevent](http://gevent.org/)，Java、Scala、ruby都有各自的实现方案。而V8给予了node先天的能力。只要你开始在node中写Javascript，跑Javascript，你就在享受这种特性。期待更加完备的Javascript。
+Javascript的简单性充分的体现到了软件包的分发上。一个带有充分信息的package.json是多么的重要。
+
+Javascript的简单性是极具欺骗性的。一旦你上了船，不久就会发现处处被埋伏。一不小心就踩下去。随处可见的回调处理，对传统的程序的顺序执行的思维逻辑形成挑战。当然，这同时也是非常有意思的，在你逐渐熟悉了这种行事方式后。幸好，Node社区的大牛门开发了[async](https://github.com/caolan/async)这样一把神器。
+
+在Javascript中写面向对象的代码是多么的难受。很多探路者们已经为像我这样的后来者留下了丰富的、有价值的资产。Node的``utils.inherits``能够方便的实现类的继承概念。但是，千万不要用在Python、Java、c++里进行OOP经验完全搬到这里。
+
+基于事件的异步模型是现在炙手可热的编程方式，Python有[gevent](http://gevent.org/)，Java、Scala、ruby都有各自的实现方案。而V8给予了node先天的能力。只要你开始在node中写Javascript，跑Javascript，你就在享受这种特性。期待更加完备的Javascript。
 
 如果你正沉浸在时髦的Node和Javascript中，祝你好运气，少踩点坑。:)
 
