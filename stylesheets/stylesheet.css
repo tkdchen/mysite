@@ -427,6 +427,8 @@ footer {
 
 .created-with-vim {
 	border: 0px;
+        margin: 3px;
+        padding: 0;
 }
 
 .post-section .read-more {
