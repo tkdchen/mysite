@@ -428,3 +428,8 @@ footer {
 .created-with-vim {
 	border: 0px;
 }
+
+.post-section .read-more {
+	font-size: 12px;
+	text-align: right;
+}

@@ -7,6 +7,8 @@ tags: nsignal npm node javascript
 
 # 我的第一个Node软件包nsignal
 
+{% excerpt %}
+
 写于2013年5月28日晚
 
 用Javascript写程序已经有段时间了。在Node的环境下，Javascript充分发挥了起长期以来被忽视的强大力量。随着写的Javascript代码越来越多，对这门语言有了更加深入的理解。与此同时，在不断地使用和阅读第三方Node软件包的过程中，越发的感觉到Javascript的潜力无限和未来发展的各种无限可能。你愿意使用Javascirpt写日常的脚本程序吗，写GUI程序吗，开发网络应用吗？
@@ -16,6 +18,8 @@ tags: nsignal npm node javascript
 使用下面的命令从Node软件仓库npm中的安装，
 
     npm install nsignal
+
+{% endexcerpt %}
 
 [nsignal](https://npmjs.org/package/nsignal)借鉴了django的Signal机制，与mongoose的模型对象结合使用。使得开发人员能够在某个对象模型发生特定事件的时候，通知注册的处理函数，以完成某些任务。这样，可以将这部分代码和处理模型对象的逻辑，例如create，update和delete，分离开。具体的使用方法，可以参照[README.md](https://github.com/tkdchen/nsignal/blob/master/README.md)。
 
