@@ -415,10 +415,16 @@ footer {
   }
 }
 
+/* my custom styles */
+
 .gist div {
 	font-size: 14px;
 }
 
 .wrapper ul {
 	font-size: 12px;
+}
+
+.created-with-vim {
+	border: 0px;
 }
