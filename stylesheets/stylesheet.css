@@ -435,3 +435,9 @@ footer {
 	font-size: 12px;
 	text-align: right;
 }
+
+a.linkedin {
+	background: url(../images/linkedin-logo.png) no-repeat 1px;
+	/*background: url(../images/octocat-small.png) no-repeat 1px\9;*/
+	background-size: 14px auto;
+}
