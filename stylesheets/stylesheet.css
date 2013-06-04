@@ -441,3 +441,8 @@ a.linkedin {
 	/*background: url(../images/octocat-small.png) no-repeat 1px\9;*/
 	background-size: 14px auto;
 }
+
+a.launchpad {
+	background: url(../images/lp-logo.png) no-repeat 1px;
+	background-size: 14px auto;
+}
