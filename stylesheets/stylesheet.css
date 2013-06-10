@@ -454,3 +454,14 @@ a.launchpad {
 	background: url(../images/lp-logo.png) no-repeat 1px;
 	background-size: 14px auto;
 }
+
+.wrapper .project-list ul li {
+  list-style: none;
+  padding-left: 0;
+  display: inline;
+  margin-right: 12px;
+}
+
+.wrapper .project-list img {
+  border: 0;
+}

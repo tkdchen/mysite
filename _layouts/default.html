@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>./echo X</title>
+		<title>./echo X</title>
 
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-		<script src="javascripts/scale.fix.js"></script>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+		<script src="/javascripts/scale.fix.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
 		<script type="text/javascript">
 
@@ -29,9 +28,9 @@
 		  })();
 
 		</script>
-  </head>
+	</head>
 
-  <body>
+	<body>
 
 		<div class="wrapper">
 			<header>
@@ -42,17 +41,9 @@
 					<ul>
 						<li><a class="buttons" href="http://weibo.com/tkdchen">微博</a></li>
 						<li><a class="buttons" href="http://www.flickr.com/photos/55770412@N08/">Photos</a></li>
-						<li><a class="buttons github" href="https://github.com/tkdchen">Projects@github</a></li>
-						<li><a class="buttons launchpad" href="https://github.com/tkdchen">Projects@launchpad</a></li>
-						<li>
-							<a class="buttons js-projects" href="#">Projects</a>
-							<ul style="display:none">
-								<li>github</li>
-								<li>launchpad</li>
-							</ul>
-						</li>
+						<li><a class="buttons js-projects" href="/projects.html">Projects</a></li>
 						<li><a class="buttons linkedin" href="http://cn.linkedin.com/pub/chenxiong-qi/2b/a83/625/">LinkedIn</a></li>
-						<li><a class="buttons" href="http://about.me/">About me</a></li>
+						<li><a class="buttons" href="http://about.me/tkdchen">About me</a></li>
 						<li><a class="buttons github" href="https://github.com/tkdchen/mysite">View On GitHub</a></li>
 					</ul>
 
@@ -68,20 +59,19 @@
 			<footer>
 				<p>
 					&copy; Chenxiong Qi, 2013. Powered by <a href="https://github.com/mojombo/jekyll/" target="_blank">Jekyll</a>
-					<a href="http://www.vim.org/"><img class="created-with-vim" src="../images/created-with-vim.png" /></a>
+					<a href="http://www.vim.org/"><img class="created-with-vim" src="/images/created-with-vim.png" /></a>
 				</p>
 			</footer>
 		</div>
 
-		<script type="text/javascript" src="javascripts/jquery.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$(".js-projects").click(function() {
-					//$(event.target).find("ul").toggle();
-					console.log("###> event");
+				$(".js-projects").click(function(event) {
+					$(event.target).next().toggle("slow");
 				});
 			});
 		</script>
 
-  </body>
+	</body>
 </html>
