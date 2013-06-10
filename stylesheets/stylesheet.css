@@ -425,6 +425,14 @@ footer {
 	font-size: 12px;
 }
 
+.wrapper .tag-section ul {
+	font-size: 16px;
+}
+
+.wrapper .post-section ul {
+	font-size: 16px;
+}
+
 .created-with-vim {
 	border: 0px;
         margin: 3px;
