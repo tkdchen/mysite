@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using jekyll to write articles in github
+date: 2013-04-29
 category: essay
 tags: github jekyll
 ---
