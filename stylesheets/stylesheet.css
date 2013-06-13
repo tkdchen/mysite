@@ -465,3 +465,11 @@ a.launchpad {
 .wrapper .project-list img {
   border: 0;
 }
+
+.tag-section .posts-count {
+	background: none repeat scroll 0 0 #AF0011;
+	color: #EEEEEE;
+	font-size: 16px;
+	padding: 0 3px;
+	vertical-align: top;
+}
