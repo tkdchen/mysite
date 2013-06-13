@@ -130,11 +130,11 @@ var checklistManageView = new ChecklistsView({
 
 这几个View足够简单，其中每一个的代码结构都很中规中矩，无非干了这么几件事。首先，在初始化阶段创建必要的内部模型对象。其次，在那些模型对象之上监听感兴趣的事件，完成页面上某个区域的用户功能的实现。最后，通过events对象中的声明，在View管理的DOM中绑定DOM级别的事件处理函数。所有的这些是使用Backbone实现前端页面用户功能所必须要做的最小的集合。初始化阶段介绍完了。那么，在一个View的生命结束的时候会发生什么事情呢？绑定事件，创建对象等等这些可都是要占用资源的，另外你肯定也不期望一个View对象不用了，它还在持续的响应事件，造成重复的不必要的事件处理。遗憾的是，Backbone本身并没有提供一种机制或者规范来强制或者提示开发人员应该在View对象的生命即将结束的时候改做写什么。这就造成Backbone使用经验不足的开发人员，经常会忽略这一点。当发现问题的时候，用拐弯抹角的方法去避免不期望的事情的发生。
 
-当然了，Backbone提供了所有必要的函数调用来清理和回收资源，怎么用好这些就需要我们细心思考了。在这里，给出如下解决方案。两点。一是，给View添加close方法。二是，给Model和Collection添加destroy方法。
+当然了，Backbone提供了所有必要的函数调用来清理和回收资源，怎么用好这些就需要我们细心思考了。在这里，给出如下解决方案。两点。一是，给View添加close方法。二是，给Model和Collection添加dispose方法。
 
 View的close方法只限于在DOM中释放资源，例如当前View对象中的事件监听。为了告诉所有子View对象它们该关闭了，直接调用它们的close方法即可。
 
-Model和Collection的destroy方法则只关注自身的资源释放。即关闭所有在自身上建立的事件监听，以及通过ioBind或者其他方式建立的socket事件监听。示例代码如下。
+Model和Collection的dispose方法则只关注自身的资源释放。即关闭所有在自身上建立的事件监听，以及通过ioBind或者其他方式建立的socket事件监听。示例代码如下。
 
 {% highlight javascript linenos %}
 
@@ -145,7 +145,7 @@ var BaseView = Backbone.View.extend({
 });
 
 var BaseMode = Backbone.Model.extend({
-  destroy: function() {
+  dispose: function() {
     this.off();
     if (!this.noIoBind)
       this.ioUnbindAll();
@@ -154,9 +154,9 @@ var BaseMode = Backbone.Model.extend({
 });
 
 var BaseCollection = Backbone.Collection.extend({
-  destroy: function() {
+  dispose: function() {
     this.forEach(function(item, index) {
-      item.destroy();
+      item.dispose();
     });
     this.off();
     if (!this.noIoBind)
