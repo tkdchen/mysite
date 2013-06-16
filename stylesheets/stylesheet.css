@@ -473,3 +473,20 @@ a.launchpad {
 	padding: 0 3px;
 	vertical-align: top;
 }
+
+.share-section p {
+	display: inline;
+}
+
+.share-section ul {
+	display: inline;
+	margin: 0 0 0 2;
+	padding: 0;
+}
+
+.share-section ul li {
+	list-style: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
