@@ -490,3 +490,14 @@ a.launchpad {
 	padding: 0;
 	margin: 0;
 }
+
+.post-section .post-footer {
+	font-size: 14px;
+	border-top: 1px solid #ccc;
+	padding-bottom: 18px;
+}
+
+.post-section .post-footer p {
+	margin: 0 0 0 0;
+}
+
