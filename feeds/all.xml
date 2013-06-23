@@ -1,0 +1,31 @@
+---
+layout: none
+---
+<?xml version="1.0"?>
+<rss version="2.0">
+   <channel>
+      <title>{{ site.name }}</title>
+      <link>{{ site.url }}</link>
+      <description>{{ site.description }}</description>
+      <language>zh-CN</language>
+      <copyright>Copyright 2013, Chenxiong Qi</copyright>
+      {% for post in site.posts limit:1 %}
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <lastBuildDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+      {% endfor %}
+      <generator>jekyll</generator>
+      <managingEditor>qcxhome@gmail.com (Chenxiong Qi)</managingEditor>
+      <webMaster>qcxhome@gmail.com (Chenxiong Qi)</webMaster>
+      {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <author>qcxhome@gmail.com</author>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <comments>{{ site.url }}{{ post.url }}#comments</comments>
+        <description><![CDATA[ {{ post.content }} ]]></description>
+      </item>
+      {% endfor %}
+   </channel>
+</rss>

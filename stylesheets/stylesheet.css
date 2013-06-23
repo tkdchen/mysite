@@ -466,6 +466,16 @@ a.launchpad {
   border: 0;
 }
 
+.wrapper .container .subscription a {
+  padding: 0;
+}
+
+.wrapper .container .subscription img {
+  border: 0;
+  height: 24px;
+  width: 24px
+}
+
 .tag-section .posts-count {
 	background: none repeat scroll 0 0 #AF0011;
 	color: #EEEEEE;
