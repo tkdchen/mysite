@@ -3,3 +3,4 @@ pygments: true
 permalink: date
 pygments: true
 url: http://tkdchen.me
+markdown: rdiscount
