@@ -34,8 +34,8 @@ module Jekyll
     end
  
     def get_gist_url_for(gist, file)
-      file = filename == '' ? '' : "/#{filename}"
-      "https://raw.github.com/gist/#{gist}#{file}"
+      filename = file == '' ? '' : "/#{file}"
+      "https://raw.github.com/gist/#{gist}#{filename}"
     end
  
     def cache(gist, file, data)
