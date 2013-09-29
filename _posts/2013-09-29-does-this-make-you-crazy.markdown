@@ -2,6 +2,7 @@
 layout: post
 title: 这个函数定义会让你抓狂吗？
 date: 2013-09-04
+category: blog
 tags: C libsolv
 ---
 
