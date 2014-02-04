@@ -5,8 +5,8 @@
 同时，预留了一些需要根据使用者的实际情况替换的信息。我使用了$var的格式来表明哪些需要用真实值来替
 换。
 
-模板遵循Fedora社区的RPM包打包规范。例如，Python软件包对应的RPM包通常加上``python-``前缀。
-如果你是在为一个django框架的扩展包打包，那么前缀应该使用``django-``。
+模板遵循Fedora社区的RPM包打包规范。例如，Python软件包对应的RPM包通常加上 ``python-`` 前缀。
+如果你是在为一个django框架的扩展包打包，那么前缀应该使用 ``django-`` 。
 
 .. index::
 	single: rpm
