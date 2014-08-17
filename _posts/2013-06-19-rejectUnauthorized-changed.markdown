@@ -3,7 +3,7 @@ layout: post
 title: rejectUnauthorized的默认值变了
 date: 2013-06-19
 category: blog
-tags: node tls
+tags: Node TLS
 ---
 
 这个变化发生在0.9.2版本中。下面的代码片段摘录自[tls.js](https://github.com/joyent/node/blob/v0.9.2-release/lib/tls.js)

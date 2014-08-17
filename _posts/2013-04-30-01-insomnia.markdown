@@ -2,7 +2,7 @@
 layout: post
 title: 失眠
 date: 2013-04-30
-category: essay
+category: blog
 ---
 
 写于2013年4月最后一天，凌晨3点。

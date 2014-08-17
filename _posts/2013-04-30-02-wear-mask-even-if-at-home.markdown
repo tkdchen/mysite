@@ -2,8 +2,8 @@
 layout: post
 title: 跟家还得带着口罩
 date: 2013-04-30
-category: essay
-tags: life
+category: blog
+tags: Life
 ---
 
 春暖花开，满世界生机勃勃。但也是我一年中，鼻子最痛苦的时候。这个时候出个门如果口罩，

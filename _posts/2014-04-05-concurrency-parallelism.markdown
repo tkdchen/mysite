@@ -3,7 +3,7 @@ layout: post
 title: Concurrency和Parallelism
 date: 2014-04-05
 category: blog
-tags: concurrency parallelism computation
+tags: Concurrency Parallelism Computation
 ---
 
 这两天特别趁着假期再次学习一下并发（Concurrency）和并行（Parallelism）。学习的主要内容是这两
@@ -19,7 +19,9 @@ Concurrency完全不同于Parallelism。计算机系统本身就是一个Concurr
 - 每一个运算单元之间不需要任何形式的通信以完成运算
 - 每一个运算单元都有自己的完成运算任务的环境（或者叫上下文环境）
 
-http://www.haskell.org/haskellwiki/Parallelism_vs._Concurrency
-http://stackoverflow.com/a/15596277/968262
-http://blog.golang.org/concurrency-is-not-parallelism
-http://en.wikipedia.org/wiki/Concurrent_computing
+学习资料
+
+- [http://www.haskell.org/haskellwiki/Parallelism_vs._Concurrency](http://www.haskell.org/haskellwiki/Parallelism_vs._Concurrency)
+- [http://stackoverflow.com/a/15596277/968262](http://stackoverflow.com/a/15596277/968262)
+- [http://blog.golang.org/concurrency-is-not-parallelism](http://blog.golang.org/concurrency-is-not-parallelism)
+- [http://en.wikipedia.org/wiki/Concurrent_computing](http://en.wikipedia.org/wiki/Concurrent_computing)

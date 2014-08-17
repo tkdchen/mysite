@@ -3,7 +3,7 @@ layout: post
 title: 我的Python代码或许在多数时候都得不了100分
 date: 2013-08-26
 category: blog
-tags: Python pylint pep8
+tags: Python Pylint PEP8
 ---
 
 在Python社区中，开发人员能够使用[pep8](https://pypi.python.org/pypi/pep8)，[pyflakes](https://pypi.python.org/pypi/pyflakes)和[pylint](http://www.pylint.org)来检查自己的代码是否符合[PEP8所描述的指导规范](http://www.python.org/dev/peps/pep-0008/)，同时还能够检查出来哪些变量是我们定义了，但是没有用到的，等等。在这些工具中，pylint无非是（似乎是）最受社区推崇的一个。OpenStack使用它做代码检查，Sonar除了支持自己默认的检查规则外，也就只支持pylint了。
