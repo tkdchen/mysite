@@ -3,6 +3,7 @@ layout: post
 title: 失眠
 date: 2013-04-30
 category: blog
+tags: Life
 ---
 
 写于2013年4月最后一天，凌晨3点。
