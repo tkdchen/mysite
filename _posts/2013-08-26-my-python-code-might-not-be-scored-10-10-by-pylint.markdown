@@ -2,7 +2,6 @@
 layout: post
 title: 我的Python代码或许在多数时候都得不了100分
 date: 2013-08-26
-category: blog
 tags: Python Pylint PEP8
 ---
 

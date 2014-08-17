@@ -2,7 +2,6 @@
 layout: post
 title: 给Python软件包打RPM包用的SPEC模板
 date: 2013-05-19
-category: blog
 tags: RPM
 ---
 

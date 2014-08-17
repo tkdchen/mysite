@@ -2,7 +2,6 @@
 layout: post
 title: 跟家还得带着口罩
 date: 2013-04-30
-category: blog
 tags: Life
 ---
 
