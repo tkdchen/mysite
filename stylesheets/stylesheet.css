@@ -536,3 +536,16 @@ a.launchpad {
 .post-section .post-footer p {
 	margin: 0 0 0 0;
 }
+
+.project-list p {
+	margin: 0 0 0 0;
+	line-height: normal;
+}
+
+.project-list h1 {
+	font-size: 160%;
+}
+
+.project-list h2 {
+	font-size: 120%;
+}
