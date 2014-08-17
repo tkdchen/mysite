@@ -8,7 +8,7 @@ layout: none
       <link>{{ site.url }}</link>
       <description>{{ site.description }}</description>
       <language>zh-CN</language>
-      <copyright>Copyright 2013, Chenxiong Qi</copyright>
+      <copyright>Copyright 2014, Chenxiong Qi</copyright>
       {% for post in site.posts limit:1 %}
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <lastBuildDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>

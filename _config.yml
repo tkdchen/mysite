@@ -1,6 +1,5 @@
-pygments: true
+highlighter: true
 permalink: date
-pygments: true
 url: http://tkdchen.me
 markdown: rdiscount
 excerpt_separator: "\n\n\n"
