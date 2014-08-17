@@ -1,4 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+/* @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic); */
+
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arvo'), url(fonts/WJ6D195CfbTRlIs49IbkFw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arvo Bold'), local('Arvo-Bold'), url(fonts/0Aa8aBJcGN1n1zDNhqNrnQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Arvo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arvo Italic'), local('Arvo-Italic'), url(fonts/7solcx-ZQo6LBqJvZuxkkg.woff) format('woff');
+}
+
 
 /* MeyerWeb Reset */
 
@@ -144,9 +164,9 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 650px;
-  padding: 5px;
-  margin: 10px 0 32px 0;
-  border: 1px solid #ccc;
+/*   padding: 5px; */
+/*   margin: 10px 0 32px 0; */
+  border: 0px solid #ccc;
 }
 
 
@@ -175,24 +195,27 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
-  margin-bottom: 32px;
-  text-align: left;
- }
+	font-size: 80%;
+	border: 1px solid #ccc;
+	margin-bottom: 32px;
+	text-align: left;
+}
 
 th {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-	font-size: 18px;
+	font-family: 'Arvo', Helvetica, Arial, sans-serif;
+	font-size: 120%;
 	font-weight: normal;
-  padding: 10px;
-  background: #232323;
-  color: #FDFEFB;
- }
+	padding: 6px;
+	background: #232323;
+	color: #FDFEFB;
+	text-align: center;
+}
+
 
 td {
-  padding: 10px;
+	padding: 0px 6px 0px 6px;
 	background: #ccc;
- }
+}
 
 
 /* Wrapper */
@@ -321,11 +344,13 @@ section {
 /* Footer */
 
 footer {
-  width:170px;
-  float:left;
-  position:fixed;
-  bottom:10px;
+	bottom:0px;
+	float:left;
+	font-size: 90%;
+	line-height: normal;
 	padding-left: 50px;
+	position:fixed;
+	width:170px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -510,4 +535,3 @@ a.launchpad {
 .post-section .post-footer p {
 	margin: 0 0 0 0;
 }
-
