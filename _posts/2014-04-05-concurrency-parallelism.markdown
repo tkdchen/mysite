@@ -2,6 +2,7 @@
 layout: post
 title: Concurrency和Parallelism
 date: 2014-04-05
+category: blog
 tags: Concurrency Parallelism Computation
 ---
 

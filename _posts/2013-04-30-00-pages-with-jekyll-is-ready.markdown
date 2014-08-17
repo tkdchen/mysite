@@ -2,6 +2,7 @@
 layout: post
 title: 开始用jekyll在Github Pages上写东西
 date: 2013-04-30
+category: blog
 tags: github jekyll
 ---
 

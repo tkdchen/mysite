@@ -2,6 +2,7 @@
 layout: post
 title: 及时释放Backbone对象占用的资源
 date: 2013-06-09 10:30:00
+category: blog
 tags: JavaScript Backbone
 ---
 

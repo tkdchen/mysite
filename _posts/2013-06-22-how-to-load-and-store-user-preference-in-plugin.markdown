@@ -2,6 +2,7 @@
 layout: post
 title: 如何在GTG插件中读取和存储用户偏好数据
 date: 2013-06-22
+category: blog
 tags: GTG Python
 ---
 

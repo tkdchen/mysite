@@ -2,6 +2,7 @@
 layout: post
 title: 我的第一个Node软件包nsignal
 date: 2013-05-28
+category: blog
 tags: nsignal NPM Node JavaScript
 ---
 

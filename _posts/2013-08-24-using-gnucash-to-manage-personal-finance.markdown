@@ -2,6 +2,7 @@
 layout: post
 title: 用GnuCash管理个人财务数据
 date: 2013-08-24
+category: blog
 tags: GnuCash Finance Life
 ---
 

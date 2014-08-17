@@ -2,6 +2,7 @@
 layout: post
 title: 如何查询个人信用记录
 date: 2013-08-09
+category: blog
 tags: Life
 ---
 

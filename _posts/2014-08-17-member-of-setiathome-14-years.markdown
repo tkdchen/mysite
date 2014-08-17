@@ -2,6 +2,7 @@
 layout: post
 title: 参与SETI@Home项目已经14年了
 date: 2014-08-17 10:20:10
+category: blog
 tags: SETI@Home Contribution
 ---
 
