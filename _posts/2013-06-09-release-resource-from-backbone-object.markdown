@@ -8,7 +8,7 @@ tags: javascript backbone
 
 [Backbone](http://backbonejs.org/)对象？是的，此文中提到的Backbone对象指的就是View，Model和Collection。他们占用什么资源呢？在一个使用了Backbone、[socket.io](http://socket.io/)和[ioBind](http://alogicalparadox.com/backbone.iobind/)的项目中，会在DOM层、Model和Collection，以及socket三个层面注册大量的事件处理函数实现用户功能。这些事件监听就是最大的一个资源占用。不仅仅消耗内存，还会导致在反复创建同一个Model或者Collection的对象的情况下事件响应的泛滥。因此，在什么时候释放这些资源，以及如何释放非常值得关注。为了回答这两个问题，先通过代码来看看典型的应用方式。
 
-{% highlight javascript linenos %}
+{% highlight JavaScript %}
 
 var BaseModel = Backbone.Model.extend({
   idAttribute: "_id",
