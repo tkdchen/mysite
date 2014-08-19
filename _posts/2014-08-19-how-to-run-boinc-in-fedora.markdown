@@ -27,9 +27,7 @@ sudo yum install boinc-client boinc-manager
 BOINC管理器允许管理多台计算机上的boinc计算进程。首次启动管理器后，需要手动地连接到某一台计算机上。步骤如下，
 
 1. 通过菜单进入计算机选择对话框 `Advanced -> Select Computer`
-
 2. 在`Host name`中，输入`127.0.0.1`。
-
 3. 以root用户身份打开文件`/var/lib/boinc/gui_rpc_auth.cfg`，将其中地完整内容拷贝到`Password`。
 
 如果已经添加了至少一个分布式计算项目，你将会看到类似如下图所示的界面。
