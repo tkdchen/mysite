@@ -13,7 +13,7 @@ tags: RPM
 模板遵循Fedora社区的RPM包打包规范。例如，Python软件包对应的RPM包通常加上``python-``前缀。
 如果你是在为一个django框架的扩展包打包，那么前缀应该使用``django-``。
 
-{% highlight RPM %}
+{% highlight spec %}
 
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %global pkg_name $name

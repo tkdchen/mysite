@@ -1,4 +1,4 @@
-highlighter: true
+highlighter: pygments
 permalink: date
 url: http://tkdchen.me
 markdown: rdiscount
