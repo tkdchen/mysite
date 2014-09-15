@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GTG的Bugzilla插件被改写为同步服务
+title: GTG的Bugzilla插件被重新实现为同步服务了
 date: 2014-09-14 20:48:20
 category: blog
 tags: GNOME GTG
