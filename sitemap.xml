@@ -8,9 +8,20 @@ layout: none
         <loc>{{ site.url }}/</loc>
         {% for post in site.posts %}
         {% if forloop.first %}
-        <lastmod>{{ post.date | date: "%F" }}</lastmod>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         {% endif %}
         {% endfor %}
         <changefreq>daily</changefreq>
     </url>
+
+    {% assign today = 'now' | date: "%F" %}
+
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% assign post_date = post.date | date: "%F" %}
+        <changefreq>{% if post_date == today %}daily{% else %}weekly{% endif %}</changefreq>
+    </url>
+    {% endfor %}
 </urlset>
