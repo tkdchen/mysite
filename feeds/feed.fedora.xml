@@ -16,7 +16,7 @@ layout: none
       <generator>jekyll</generator>
       <managingEditor>{{ site.email }} ({{ site.my_name }})</managingEditor>
       <webMaster>{{ site.email }} ({{ site.my_name }})</webMaster>
-      {% for post in site.posts %}
+      {% for post in site.tags.Fedora %}
       <item>
         <title>{{ post.title }}</title>
         <author>{{ site.email }}</author>

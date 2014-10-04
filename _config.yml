@@ -1,5 +1,9 @@
+name: Chenxiong Qi's personal site
+description: My personal site recording my life path
+url: http://tkdchen.me
+my_name: Chenxiong Qi
+email: qcxhome@gmail.com
 highlighter: pygments
 permalink: date
-url: http://tkdchen.me
 markdown: rdiscount
 excerpt_separator: "\n\n\n"
