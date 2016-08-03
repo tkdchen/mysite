@@ -1,0 +1,31 @@
+---
+layout: none
+---
+<?xml version="1.0"?>
+<rss version="2.0">
+   <channel>
+      <title>{{ site.name }}</title>
+      <link>{{ site.url }}</link>
+      <description>{{ site.description }}</description>
+      <language>zh-CN</language>
+      <copyright>Copyright 2014, Chenxiong Qi</copyright>
+      {% for post in site.posts limit:1 %}
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <lastBuildDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</lastBuildDate>
+      {% endfor %}
+      <generator>jekyll</generator>
+      <managingEditor>{{ site.email }} ({{ site.my_name }})</managingEditor>
+      <webMaster>{{ site.email }} ({{ site.my_name }})</webMaster>
+      {% for post in site.tags.libabigail %}
+      <item>
+        <title>{{ post.title }}</title>
+        <author>{{ site.email }}</author>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <comments>{{ site.url }}{{ post.url }}#comments</comments>
+        <description><![CDATA[ {{ post.content }} ]]></description>
+      </item>
+      {% endfor %}
+   </channel>
+</rss>

@@ -5,7 +5,12 @@ title: echo X
 
 {% for tag in site.tags %}
 <div class="tag-section">
-  <h2 id="{{ tag[0] }}">{{ tag[0] }}<span></span></h2>
+  <h2 id="{{ tag[0] }}">{{ tag[0] }}
+  {% if tag[0] == "Fedora" %}
+    <a href="feeds/feed.fedora.xml"><img src="/images/rss.png" alt="RSS" width="24" height="24"></a>
+  {% elsif tag[0] == "libabigail" %}
+    <a href="feeds/feed.libabigail.xml"><img src="/images/rss.png" alt="RSS" width="24" height="24"></a>
+  {% endif %}</h2>
   <ul>
     {% for post in tag[1] %}
       <li>{{ post.date | date: "%Y-%m-%d" }}:
